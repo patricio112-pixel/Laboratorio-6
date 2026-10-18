@@ -1,0 +1,26 @@
+:root { --navy: #10243a; --blue: #1e6fe8; --sky: #eaf3ff; --ink: #172536; --muted: #5c6b7a; --card: #ffffff; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: var(--ink); background: #f5f8fc; line-height: 1.6; }
+header { background: linear-gradient(120deg, #10243a, #1e6fe8); color: white; padding: 3rem 1.25rem; }
+.hero { max-width: 1100px; margin: auto; display: grid; grid-template-columns: 1.3fr .7fr; gap: 2rem; align-items: center; }
+header h1 { font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.1; margin: .4rem 0 1rem; }
+header p { max-width: 650px; color: #e5efff; }
+.eyebrow { text-transform: uppercase; letter-spacing: .13em; font-size: .8rem; font-weight: 700; }
+.hero img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 1.25rem; box-shadow: 0 15px 35px #07172d55; }
+nav { background: var(--navy); position: sticky; top: 0; z-index: 10; }
+nav .inner { max-width: 1100px; margin: auto; display: flex; flex-wrap: wrap; align-items: center; gap: .35rem; padding: .65rem 1rem; }
+nav a { color: #eaf3ff; text-decoration: none; padding: .65rem .9rem; border-radius: .65rem; font-weight: 600; }
+nav a:hover, nav a.active { background: #fff; color: var(--navy); }
+main { max-width: 1100px; margin: 2rem auto; padding: 0 1rem 2rem; }
+.intro { background: white; border: 1px solid #e1e8f0; padding: 1.4rem; border-radius: 1rem; margin-bottom: 1.5rem; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin: 1.4rem 0 2rem; }
+.card { background: var(--card); border-radius: 1rem; overflow: hidden; box-shadow: 0 5px 20px #17304b12; border: 1px solid #e2eaf3; }
+.card img { width: 100%; height: 210px; object-fit: cover; display: block; }
+.card .body { padding: 1rem 1.1rem 1.25rem; }
+.card h3 { margin-top: 0; }
+.tag { display: inline-block; background: var(--sky); color: #1557b8; padding: .25rem .6rem; border-radius: 99px; font-size: .8rem; font-weight: 700; }
+.notice { padding: 1rem 1.2rem; background: #e7f7ef; border-left: 5px solid #1d9a60; border-radius: .5rem; margin: 1.5rem 0; }
+footer { background: var(--navy); color: #d7e6f7; text-align: center; padding: 1.5rem; }
+footer p { margin: .2rem; }
+.btn { display: inline-block; background: var(--blue); color: white; padding: .7rem 1rem; text-decoration: none; border-radius: .65rem; font-weight: 700; }
+@media (max-width: 760px) { .hero { grid-template-columns: 1fr; } .hero img { max-height: 280px; } .grid { grid-template-columns: 1fr; } }
