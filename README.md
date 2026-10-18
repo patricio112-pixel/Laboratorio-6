@@ -19,6 +19,7 @@ Este repositorio contiene las actividades del Laboratorio 6 de Programación Web
 - `css/estilos.css`: estilos del sitio web.
 
 ## Colaboradores
+   <!-- Revisado por Gilberto Garcia -->
 
 Este espacio está destinado a registrar las contribuciones realizadas por los compañeros de clase.
 
